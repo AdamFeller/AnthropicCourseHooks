@@ -14,10 +14,6 @@ async function main() {
     console.error("Claude is trying to read the .env file, which is not allowed. Returning empty string.");
     process.exit(2);
   }
-
-  // TODO: ensure Claude isn't trying to read the .env file
-  if (readPath.includes(".env")) {
-    console.log("Claude is trying to read the .env file, which is not allowed. Returning empty string.");
 }
 
 main();
